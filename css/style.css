@@ -1,0 +1,13 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    border:0;
+}
+.contain{
+    position: relative;
+}
+.item{
+    position: absolute;
+    left:42vw;
+    top:0.75vw
+}
