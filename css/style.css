@@ -6,8 +6,16 @@ body{
 .contain{
     position: relative;
 }
-.item{
+.inputButton{
     position: absolute;
     left:42vw;
     top:0.75vw
+}
+
+.completedItem{
+    text-decoration: line-through;
+}
+
+.item{
+    overflow: scroll;
 }
