@@ -16,6 +16,26 @@ body{
     text-decoration: line-through;
 }
 
-.item{
-    overflow: scroll;
+#itemContainer{
+    max-height: 30rem;
+    overflow-y: scroll;
+}
+
+h3{
+    width: 20rem;
+    max-height: 2rem;
+    overflow-x: scroll ;
+    overflow-y: scroll ;
+}
+
+@media(max-width:1024px){
+    h3{
+        width: 4rem;
+     }
+}
+
+@media(max-width:768px){
+    #itemContainer{
+        max-height: 22rem;
+    }
 }
