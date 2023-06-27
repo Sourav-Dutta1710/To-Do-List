@@ -9,13 +9,15 @@ function addButton(event) {
 
 function add() {
   flag = 0;
+  let task1 = task.value.trim();
+  console.log(active[0]);
   for (i = 0; i < active.length; i++) {
-    if (active[i] === task.value) {
+    if (active[i] === task1) {
       alert("Repeated Task");
+      task.value = "";
       flag = 1;
     }
   }
-  let task1 = task.value.trim();
   if(task1==="") alert("Blank Task");
   else if (flag === 0) active.unshift(task.value);
 
